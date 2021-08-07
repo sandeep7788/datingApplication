@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/bg"
+    tools:context=".fragments.ProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvLogout"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/bold"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_white_round" />
+
+            <View
+                android:id="@+id/tvName"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_black_5dp"
+                android:fontFamily="@font/bold"
+                android:backgroundTint="@color/white" />
+
+            <View
+                android:id="@+id/tvemail"
+                android:layout_width="250dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/midum"
+                android:text="juniadansari@gmail.com"
+                android:background="@drawable/bg_black_5dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_greadent_pinklight15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imgcoin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_coin_star" />
+
+                    <TextView
+                        android:id="@+id/tvcoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toEndOf="@id/imgcoin"
+                        android:fontFamily="@font/bold"
+                        android:gravity="top"
+                        android:text="340"
+                        android:textColor="@color/black2"
+                        android:textSize="26dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgcoin"
+                        android:fontFamily="@font/regular"
+                        android:text=" Your Balance"
+                        android:textColor="@color/pinkmain" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytMorecoins"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_gredent_pinkjoin10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/khajano" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="More Coins"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lytfreecoins"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_greadent_pinklight15dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_black_5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_hot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="HOT "
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imgcoin2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_coin_star" />
+
+                    <TextView
+                        android:id="@+id/tvgetfreecoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/imgcoin2"
+                        android:text="Get Free Coins"
+                        android:textColor="@color/pinkmain"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvgetfreecoin"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/imgcoin2"
+                        android:text="Watch Video and get 50 coins"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_greadent_pinklight15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="15dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_privacy"
+                        android:tint="@color/pinkmain"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/pinkmain"
+                        android:textSize="10sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_greadent_pinklight15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="15dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_terms"
+                        android:tint="@color/pinkmain"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Tearms of Use"
+                        android:textColor="@color/pinkmain"
+                        android:textSize="10sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_greadent_pinklight15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="15dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_baseline_share_24"
+                        android:tint="@color/pinkmain"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Share App"
+                        android:textColor="@color/pinkmain"
+                        android:textSize="10sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Log Out"
+        android:textColor="@color/whitepink"
+        android:textSize="16sp" />
+
+</RelativeLayout>

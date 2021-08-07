@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="50dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_fix"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="-20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/live_item_bg" />
+
+                <ImageView
+                    android:id="@+id/imagegirl"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_fix"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/heavy"
+                    tools:text="Jesica"
+                    android:textColor="@color/black2"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/lytdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_greadent_pinkorange_round"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgcountry"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                    <TextView
+                        android:id="@+id/tvcountryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        tools:text="USA"
+                        android:fontFamily="@font/midum"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Age: 21"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/lytdetail"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_gredent_pinkjoin10dp"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Join Stream"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_white_round"
+                    android:backgroundTint="@color/black2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="3dp">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_white_round"
+                        android:backgroundTint="@color/green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/midum"
+                        android:text="Online  "
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

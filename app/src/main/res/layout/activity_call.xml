@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".actvites.CallAcceptActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="30dp"
+                    android:rotation="-20"
+                    android:src="@drawable/lips" />
+
+                <TextView
+                    android:id="@+id/tvstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Perfect Match!"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvdes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/lytPhotos"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="90dp"
+                        android:rotation="-15"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="100dp"
+                            android:layout_height="130dp"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/girl4" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="40dp"
+                        android:rotation="30"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="100dp"
+                            android:layout_height="130dp"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/african" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/lytconnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imggirlconnected"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:transitionName="logo"
+                        android:background="@drawable/bg_white_ring"
+                        android:padding="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Susmita"
+                        android:transitionName="name"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_black_10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="5dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_coin_star" />
+
+                        <TextView
+                            android:id="@+id/tv_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="90/min"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="-20dp">
+
+                    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/spin_kit2"
+                        style="@style/SpinKitView.Large.Pulse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_white_round"
+                            android:padding="10dp"
+                            android:src="@drawable/ringdotted" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:elevation="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/heart" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvdes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:text="Sushmita invites you for video call"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/lytbuttons"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnCallAccept"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/bg_white_round"
+                        android:backgroundTint="#02AA0D"
+                        android:onClick="onClickAccept"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_phone_call"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/btnCallDecline"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/bg_white_round"
+                        android:backgroundTint="#FF2929"
+                        android:padding="15dp"
+                        android:rotation="135"
+                        android:src="@drawable/ic_phone_call"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_white_round"
+                android:elevation="10dp"
+                app:tint="@color/cream" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Connecting.."
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imggirl"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/bg_white_ring"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Susmita"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_black_10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_coin_star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="90/min"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Pulse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bg_white_round"
+                    android:elevation="10dp"
+                    app:tint="@color/cream" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

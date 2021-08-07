@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MapFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:background="@drawable/bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Searching Perfect Partner for you"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/map"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/spin_kit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loader"
+                    app:lottie_renderMode="software" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:shimmer_auto_start="true"
+                    app:shimmer_colored="true"
+                    app:shimmer_highlight_alpha="1"
+                    app:shimmer_shape="radial">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/map" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:paddingHorizontal="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_3"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lineCenter"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+
+
+            <com.daasuu.cat.CountAnimationTextView
+                android:id="@+id/tvcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/bold"
+                android:text="9999"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvcount"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/midum"
+                android:text="@string/perfect_matches_for_you"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/tvmatch"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_white_round"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:paddingHorizontal="100dp"
+                android:text="Match"
+                android:textColor="@color/pinkmain"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

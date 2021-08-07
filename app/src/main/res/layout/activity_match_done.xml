@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".actvites.MatchDoneActivity">
+
+        <ImageView
+            android:id="@+id/imgmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/girl3" />
+
+        <RelativeLayout
+            android:id="@+id/lytdetails"
+            android:layout_width="260dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_red_transperent_10">
+
+            <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_white_ring"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:id="@+id/lytname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgprofile"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Susmita"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_white_round"
+                    android:backgroundTint="@color/green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Online"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lytname"
+                android:layout_toEndOf="@id/imgprofile"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgflag"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/tvcountryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    tools:text="India"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_black_10top"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_coin_star" />
+
+                <TextView
+                    android:id="@+id/tvcoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="90/min"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvbio"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytdetails"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_blacktransperent_5dp"
+            android:fontFamily="@font/midum"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="1dp"
+            android:text="I love boys too much.."
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvnotice">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardgirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="35dp"
+                app:cardCornerRadius="5dp">
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:id="@+id/playerview"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    app:resize_mode="fill"
+                    app:show_buffering="never"
+                    app:use_controller="false" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/playerloder"
+                    app:shimmer_base_color="@color/white"
+                    app:shimmer_highlight_color="@color/white"
+                    app:shimmer_colored="true">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_webcam"
+                        app:tint="@color/white" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/lytheartcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/carduser"
+                android:layout_toLeftOf="@id/carduser"
+                android:layout_toEndOf="@id/cardgirl"
+                android:layout_toRightOf="@id/cardgirl">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_toLeftOf="@+id/imageHeart"
+                    android:rotation="180"
+                    android:src="@drawable/line_right" />
+
+
+                <com.like.LikeButton
+                    android:id="@+id/imageHeart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    app:anim_scale_factor="2"
+                    app:circle_end_color="@color/pinkmain"
+                    app:circle_start_color="@color/white"
+                    app:dots_primary_color="@color/purple"
+                    app:dots_secondary_color="@color/white"
+                    app:icon_size="35dp"
+                    app:icon_type="heart"
+                    app:like_drawable="@drawable/item_heart_1"
+                    app:liked="false"
+                    app:unlike_drawable="@drawable/item_heart" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_toEndOf="@+id/imageHeart"
+                    android:src="@drawable/line_right" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carduser"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="35dp"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/imageyour"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:padding="2dp" />
+
+                <androidx.camera.view.CameraView
+                    android:id="@+id/surface_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lensFacing="front" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lytheartcenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Like To get reply"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_marginBottom="3dp"
+                android:id="@+id/tvSeconds"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/lytheartcenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg_blacktransperent_round"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.prush.bndrsntchtimer.BndrsntchTimer
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/tvSeconds"
+                android:layout_marginVertical="8dp"
+                android:visibility="gone"
+                app:progress_color="@color/black2" />
+
+            <LinearLayout
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/tvSeconds"
+                android:layout_centerInParent="true">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/spin_kit"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loader"
+                    app:lottie_repeatMode="restart"
+                    app:lottie_speed="2" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvnotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_transperent"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:singleLine="true"
+            android:text="Your Dream Girl Will be gone with in 10 seconds"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <include
+            android:id="@+id/lytloder"
+            layout="@layout/layout_loder" />
+
+        <RelativeLayout
+            android:id="@+id/lytafterLike"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_afterlike_gredent_10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgprofile2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_white_ring"
+                    android:padding="1dp" />
+
+                <TextView
+                    android:id="@+id/tvName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Susmita"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/tvSeconds"
+                    android:layout_centerInParent="true">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/spin_kit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/loader"
+                        app:lottie_repeatMode="restart"
+                        app:lottie_speed="2" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="You liked her,\nWaiting for her reply..!"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

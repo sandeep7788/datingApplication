@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_10dp"
+            android:backgroundTint="@color/colorGradientStart"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Really ?"
+                android:textColor="@color/black2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="10dp"
+                android:src="@drawable/emoji" />
+
+            <TextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:gravity="center"
+                android:text="Do you really want to\nloose this girl..?"
+                android:textColor="@color/black2" />
+            <!--<com.retrytech.janu.utils.ads.DefaultNativeView-->
+            <!--    android:layout_width="match_parent"-->
+            <!--    android:layout_height="wrap_content"-->
+            <!--    android:layout_marginTop="10dp"-->
+            <!--    android:paddingHorizontal="10dp" />-->
+            <com.love.loveme.utils.ads.MyBannerAdsView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvPositive"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_gray_round"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:text="Yes"
+                    android:textColor="@color/black2" />
+
+                <TextView
+                    android:id="@+id/tvcontinue"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bg_gredent_pinkround"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="No Continue"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

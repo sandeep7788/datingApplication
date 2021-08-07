@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Love Me</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">---</string>
+    <string name="fb_login_protocol_scheme">fb---</string>
+    <string name="perfect_matches_for_you">Perfect matches for you</string>
+
+
+    <string name="googlepay_status_unavailable">Unfortunately, Google Pay is not available on this device.</string>
+    <string name="payments_show_name">Successfully received payment data for %s!</string>
+    <string name="gateway_replace_name_example">"Gateway name set to \"example\" - please modify Constants.java and replace it with your own gateway."</string>
+    <string name="checkout_item_description">Description</string>
+    <string name="play_lic_key">=----</string>
+    <string name="rzp_key_test">rzp_test_ACbRQBEsqK9Y9C</string>
+    <string name="rzp_key">rzp_live_hRb3qqylKwv4O5</string>
+    <!--google admob-->
+    <string name="admob_app_id">ca-app-pub-1437153974595170~9914070110</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="you_can_chat_whatever_you_want_chat_history_will_be_cleared_once_you_leave_the_room">You can chat whatever you want, chat history will be cleared once you leave the room.</string>
+    <string name="facebookbanner">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>-->
+</resources>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:fontFamily="@font/bold"
+                        android:text="Popup Title"
+                        android:textColor="@color/black2"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginVertical="10dp"
+                        android:rotation="-20"
+                        android:src="@drawable/lips" />
+
+                    <TextView
+                        android:id="@+id/tvDes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/thin"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:text="YOu can place your msg \n max upto 3 lines\n here space"
+                        android:textColor="@color/black2" />
+
+                    <!--                    <com.retrytech.janu.utils.ads.DefaultNativeView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="80dp"-->
+                    <!--                        android:layout_marginTop="10dp" />-->
+                    <com.love.loveme.utils.ads.MyBannerAdsView
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvPositive"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_gredent_pinkjoin10dp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center_horizontal"
+                        android:paddingVertical="10dp"
+                        android:text="Yes,Please"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvNagetive"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_white_gray_10dp"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center_horizontal"
+                        android:paddingVertical="10dp"
+                        android:text="Cancel"
+                        android:textColor="@color/black2"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnClose"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_close_24" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

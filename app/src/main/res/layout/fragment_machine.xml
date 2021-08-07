@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:background="@drawable/bg"
+        tools:context=".fragments.MachineFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_auto_start="true"
+                app:shimmer_colored="true"
+                app:shimmer_highlight_alpha="1"
+                app:shimmer_shape="radial">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/map" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvmachine1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_machine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rvmachine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvmachine1"
+                android:orientation="horizontal"
+                android:paddingStart="-30dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_machine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvmachine3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvmachine2"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_machine" />
+        </RelativeLayout>
+
+        <com.daasuu.cat.CountAnimationTextView
+            android:id="@+id/count_animation_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bold"
+            android:text="9999"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/midum"
+            android:text="Girls Available Online Now"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/light"
+            android:text="Find your Dream match now"
+            android:textColor="@color/whitepink"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/bt1startmatching"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_round"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:text="Start Matching"
+            android:textAllCaps="true"
+            android:textColor="@color/pinkmain"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</layout>

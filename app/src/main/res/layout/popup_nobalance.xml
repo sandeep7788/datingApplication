@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_white_10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Insufficent Coins!"
+                android:textColor="@color/black2"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:text="Your Balance"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_gredent_pinkjoin5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_coin_star" />
+
+                <TextView
+                    android:id="@+id/tvbalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="30"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginVertical="5dp"
+                android:src="@drawable/khajano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/light"
+                android:gravity="center"
+                android:text="Recharge Your wallet and\nenjoy calling.."
+                android:textSize="14sp" />
+
+            <!--            <com.retrytech.janu.utils.ads.DefaultNativeView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:paddingHorizontal="10dp" />-->
+            <com.love.loveme.utils.ads.MyBannerAdsView
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvplans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_coinplans" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:tint="@color/black" />
+
+    </RelativeLayout>
+</layout>

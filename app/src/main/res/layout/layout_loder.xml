@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lytloder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/lytbackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_shape" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="30dp"
+                        android:rotation="-20"
+                        android:src="@drawable/lips" />
+
+                    <TextView
+                        android:id="@+id/tvstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Perfect Match!"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytheart"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true">
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/spin_kit2"
+                        style="@style/SpinKitView.Large.Pulse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_white_round"
+                            android:padding="10dp"
+                            android:src="@drawable/ringdotted" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:elevation="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/heart" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvdes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lytheart"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="center"
+                    android:text="Please wait for next match"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

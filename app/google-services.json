@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991007456",
+    "project_id": "loveme-ca221",
+    "storage_bucket": "loveme-ca221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991007456:android:2a4ed4f6c85cc3b2cdf685",
+        "android_client_info": {
+          "package_name": "com.love.loveme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991007456-1v26js7lnti97prh1e05v3t2attgplde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.love.loveme",
+            "certificate_hash": "fb3c5745dbb394d6e87fc61fc65b4384ec8a5a5a"
+          }
+        },
+        {
+          "client_id": "991007456-33qop8n6govanv6gali34kiieot2oh6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd_43tcQ6PTOIWbCyNFDw4m5aba0R9xY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991007456-33qop8n6govanv6gali34kiieot2oh6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
